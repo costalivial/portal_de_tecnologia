@@ -1,0 +1,168 @@
+/* RESET PADRÃO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CORPO DA PÁGINA */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #a8c2f47b 0%, #84b1f3 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+/* CABEÇALHO (HEADER) */
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaço entre a imagem e o texto */
+    margin-bottom: 20px;
+}
+
+.header-container img {
+    border-radius: 8px; /* Deixa as bordas da imagem arredondadas */
+    object-fit: cover;
+}
+
+header h1 {
+    font-family: 'Playfair Display';
+    color: #140781;
+}
+
+header p {
+    color: #053a5a;
+    font-style: italic;
+}
+
+/* MENU DE NAVEGAÇÃO */
+nav {
+    margin: 15px 0;
+}
+
+nav h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+nav ul {
+    list-style: none; /* Remove as bolinhas do menu */
+    display: flex; /* Coloca os itens do menu lado a lado */
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #140781;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #053a5a; /* Muda de cor quando passa o mouse */
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #140781;
+    margin-bottom: 20px;
+}
+
+/* ESTRUTURA DO LAYOUT (FLEXBOX) */
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Espaço entre o conteúdo e a barra lateral */
+    align-items: flex-start;
+}
+
+/* COLUNA DO CONTEÚDO PRINCIPAL */
+.conteudo-principal {
+    flex: 3; /* Ocupa 3 partes do espaço */
+    background: rgba(255, 255, 255, 0.85); /* Fundo branco semi-transparente */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#noticias {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px dashed #84b1f3;
+}
+
+/* BARRA LATERAL (SIDEBAR) */
+.sidebar {
+    flex: 1; /* Ocupa 1 parte do espaço (mais estreita) */
+    background: #140781;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.sidebar h3 {
+    font-family: 'Courier New', sans-serif;
+    color: #fff; /* Mudado para branco para contrastar com o fundo azul escuro */
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.sidebar li {
+    margin-bottom: 8px;
+}
+
+/* ESTILOS GERAIS DE TÍTULOS */
+h2 {
+    font-family: 'Cambria', sans-serif;
+    color: #140781;
+    margin-bottom: 10px;
+}
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #140781;
+}
+
+/* RESPONSIVIDADE (Para celulares) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Em telas pequenas, a sidebar vai para baixo */
+    }
+    nav ul {
+        flex-direction: column; /* Menu fica em lista no celular */
+        gap: 5px;
+    }
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+a{
+    font-family: 'Courier New';
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #41b2f4;
+    min-height: 10vh;
+    padding: 20px;
+}
+
+a:first-of-type {
+     font-family: 'Courier New';
+    font-weight: bold;
+    color: #6072ff;
+    font-size: 1rem;
+    line-height: 1.5;
+}
